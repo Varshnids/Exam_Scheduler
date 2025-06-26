@@ -11,7 +11,7 @@ export default function AdminStudents() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5000/api/auth/students')
+    axios.get('https://exam-scheduler-ksr6.onrender.com/api/auth/students')
       .then(res => {
         setStudents(res.data);
         setLoading(false);

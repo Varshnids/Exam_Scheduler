@@ -29,7 +29,7 @@ export default function SignupForm({ onSignup }) {
       return;
     }
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', { username, password, role });
+      await axios.post('https://exam-scheduler-ksr6.onrender.com/api/auth/signup', { username, password, role });
       setSuccess('Signup successful! You can now log in.');
       setUsername('');
       setPassword('');

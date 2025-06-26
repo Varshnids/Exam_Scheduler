@@ -11,7 +11,7 @@ export default function AdminExams() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5000/api/auth/exams')
+    axios.get('https://exam-scheduler-ksr6.onrender.com/api/auth/exams')
       .then(res => {
         setExams(res.data);
         setLoading(false);
