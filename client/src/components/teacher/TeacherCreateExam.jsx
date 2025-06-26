@@ -42,7 +42,7 @@ export default function TeacherCreateExam() {
       duration = (end - start) / 60000;
     }
     try {
-      await axios.post('http://localhost:5000/api/teacher/exams', {
+      await axios.post('https://exam-scheduler-ksr6.onrender.com/api/teacher/exams', {
         title: form.title,
         subject: form.subject,
         date: form.date,
